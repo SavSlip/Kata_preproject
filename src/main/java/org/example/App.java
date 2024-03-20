@@ -35,7 +35,7 @@ public class App {
                 preparedStatement.setInt(1, cena);
                 preparedStatement.setString(2, prodavetc);
                 preparedStatement2.setInt(1, cena);
-                preparedStatement2.setString(2, pokupatel);
+                preparedStatement2.setString(2, pokupatel);;
                 if (preparedStatement2.executeUpdate() == preparedStatement.executeUpdate()) {
                     connection.commit();
                 } else {
@@ -70,7 +70,7 @@ public class App {
     public static void main(String[] args) throws SQLException {
         //    insertUser();
         //    getAllUsers().forEach(System.out::println);
-        pokupka(75, "Prodavetc", "Pokupatel");
+        pokupka(10, "Prodavetc", "Pokupatel");
     }
 }
 
